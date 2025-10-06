@@ -10,6 +10,10 @@ nav_order: 11
 - Type: Bidirectional or unidirectional DC-DC converter (Scotty V3)
 - Use: Step-up/step-down between 24V and 48V systems
 
+## Installed
+- Quantity: 2 units installed
+- Role: Bridge between 24V GEL bank and 48V Meteor bank
+
 ## Configuration Notes
 - Document input/output voltage configuration and current limits.
 - Note enable/ignition wiring, protections, and thermal derating.

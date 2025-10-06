@@ -10,6 +10,10 @@ nav_order: 10
 - Type: 48V LiFePO4 battery system (Safiery Meteor series)
 - Use: House battery bank and high-voltage DC bus
 
+## Installed
+- Quantity: 8 units installed
+ - Bank arrangement: 1S8P (eight 48V modules in parallel)
+
 ## Configuration Notes
 - Record battery model, capacity (Ah/Wh), and BMS version.
 - Note CAN/RS485 integrations, charge limits, and low-temp cutoffs.
