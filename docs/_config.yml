@@ -4,8 +4,9 @@ description: "Living documentation for systems, procedures, safety, and maintena
 # Use the Chirpy theme via remote_theme (works on GitHub Pages)
 remote_theme: cotes2020/jekyll-theme-chirpy
 
-# Chirpy requires include-cache for performance on GitHub Pages
+# Plugins (include remote-theme so Pages fetches Chirpy)
 plugins:
+  - jekyll-remote-theme
   - jekyll-include-cache
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -19,6 +20,8 @@ avatar: /assets/img/logo.jpg
 
 # URL structure
 permalink: pretty
+url: https://barretcunningham.github.io
+baseurl: /5209
 
 # Navigation order via page front matter `nav_order`
 # Navigation note: Chirpy uses pages, posts, and optional tabs.
@@ -26,6 +29,8 @@ permalink: pretty
 
 # Build settings (keep minimal for GitHub Pages)
 markdown: kramdown
+lang: en
+timezone: Etc/UTC
 exclude:
   - "scripts"
   - "vendor"
