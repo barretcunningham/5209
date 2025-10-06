@@ -1,8 +1,3 @@
----
-title: "Heavy Weather"
-parent: "Procedures"
-nav_order: 60
----
 
 # Heavy Weather Procedure
 

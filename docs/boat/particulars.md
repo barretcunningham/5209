@@ -1,8 +1,3 @@
----
-title: "Particulars"
-parent: "Boat"
-nav_order: 20
----
 
 # Vessel Particulars
 

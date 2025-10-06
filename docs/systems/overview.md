@@ -1,8 +1,3 @@
----
-title: "Overview"
-parent: "Systems"
-nav_order: 10
----
 
 # Systems Overview
 

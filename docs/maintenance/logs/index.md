@@ -1,9 +1,3 @@
----
-title: "Logs"
-parent: "Maintenance"
-nav_order: 40
-has_children: true
----
 
 # Maintenance Logs
 

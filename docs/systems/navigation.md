@@ -1,8 +1,3 @@
----
-title: "Navigation"
-parent: "Systems"
-nav_order: 60
----
 
 # Navigation System
 

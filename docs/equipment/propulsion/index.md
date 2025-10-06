@@ -1,9 +1,3 @@
----
-title: "Propulsion"
-parent: "Equipment"
-nav_order: 30
-has_children: true
----
 
 # Propulsion Equipment
 

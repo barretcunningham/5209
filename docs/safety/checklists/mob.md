@@ -1,8 +1,3 @@
----
-title: "Man Overboard"
-parent: "Checklists"
-nav_order: 10
----
 
 # Man Overboard Checklist
 

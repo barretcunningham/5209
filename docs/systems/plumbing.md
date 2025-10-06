@@ -1,8 +1,3 @@
----
-title: "Plumbing"
-parent: "Systems"
-nav_order: 50
----
 
 # Plumbing System
 

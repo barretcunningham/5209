@@ -1,8 +1,3 @@
----
-title: "Fire"
-parent: "Checklists"
-nav_order: 20
----
 
 # Fire Response Checklist
 

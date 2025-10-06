@@ -1,8 +1,3 @@
----
-title: "Abandon Ship"
-parent: "Checklists"
-nav_order: 40
----
 
 # Abandon Ship Checklist
 

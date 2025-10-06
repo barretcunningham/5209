@@ -1,8 +1,3 @@
----
-title: "Overview"
-parent: "Safety"
-nav_order: 10
----
 
 # Safety Overview
 

@@ -1,8 +1,3 @@
----
-title: "Departure"
-parent: "Procedures"
-nav_order: 20
----
 
 # Departure Procedure
 

@@ -1,8 +1,3 @@
----
-title: "Anchoring"
-parent: "Procedures"
-nav_order: 40
----
 
 # Anchoring Procedure
 

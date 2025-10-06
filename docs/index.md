@@ -1,9 +1,3 @@
----
-layout: home
-title: "Operations Manual"
-nav_order: 1
----
-
 # NEEL 52 — Boat Operations Manual
 
 Welcome. This site centralizes vessel operations, systems, safety, and maintenance. Use the left navigation and search to find procedures and equipment references.

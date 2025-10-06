@@ -1,8 +1,3 @@
----
-title: "Procedures"
-nav_order: 30
-has_children: true
----
 
 # Procedures
 

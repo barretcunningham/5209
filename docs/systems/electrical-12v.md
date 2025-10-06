@@ -1,8 +1,3 @@
----
-title: "Electrical (DC)"
-parent: "Systems"
-nav_order: 20
----
 
 # DC Electrical System
 

@@ -1,8 +1,3 @@
----
-title: "Overview"
-parent: "Boat"
-nav_order: 10
----
 
 # Boat Overview
 

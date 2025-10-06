@@ -1,8 +1,3 @@
----
-title: "Propulsion"
-parent: "Systems"
-nav_order: 40
----
 
 # Propulsion System
 

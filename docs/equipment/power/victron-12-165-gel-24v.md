@@ -1,9 +1,3 @@
----
-title: "Victron 12-165 GEL (24V Bank)"
-parent: "Power"
-grand_parent: "Equipment"
-nav_order: 12
----
 
 # Victron 12-165 GEL (24V Bank)
 

@@ -1,9 +1,3 @@
----
-title: "Checklists"
-parent: "Safety"
-nav_order: 20
-has_children: true
----
 
 # Emergency Checklists
 

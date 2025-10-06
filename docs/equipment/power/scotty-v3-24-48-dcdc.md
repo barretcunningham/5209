@@ -1,9 +1,3 @@
----
-title: "Scotty V3 24/48V DC-DC Converter"
-parent: "Power"
-grand_parent: "Equipment"
-nav_order: 11
----
 
 # Scotty V3 24/48V DC-DC Converter
 

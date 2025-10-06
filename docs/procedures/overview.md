@@ -1,8 +1,3 @@
----
-title: "Overview"
-parent: "Procedures"
-nav_order: 10
----
 
 # Procedures Overview
 

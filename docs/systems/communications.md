@@ -1,8 +1,3 @@
----
-title: "Communications"
-parent: "Systems"
-nav_order: 70
----
 
 # Communications System
 

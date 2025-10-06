@@ -1,9 +1,3 @@
----
-title: "Safiery Meteor 48V Lithium Batteries"
-parent: "Power"
-grand_parent: "Equipment"
-nav_order: 10
----
 
 # Safiery Meteor 48V Lithium Batteries
 

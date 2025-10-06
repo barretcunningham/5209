@@ -1,8 +1,3 @@
----
-title: "Service Schedule"
-parent: "Maintenance"
-nav_order: 20
----
 
 # Service Schedule
 

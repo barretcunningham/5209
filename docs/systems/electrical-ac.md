@@ -1,8 +1,3 @@
----
-title: "Electrical (AC)"
-parent: "Systems"
-nav_order: 30
----
 
 # AC Electrical System
 

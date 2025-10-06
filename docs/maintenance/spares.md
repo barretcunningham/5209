@@ -1,8 +1,3 @@
----
-title: "Spares"
-parent: "Maintenance"
-nav_order: 30
----
 
 # Critical Spares
 

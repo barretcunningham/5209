@@ -1,8 +1,3 @@
----
-title: "Reefing"
-parent: "Procedures"
-nav_order: 50
----
 
 # Reefing Procedure
 

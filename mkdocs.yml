@@ -1,0 +1,94 @@
+site_name: NEEL 52 – Boat Operations Manual
+site_description: Living documentation for systems, procedures, safety, and maintenance
+site_url: https://barretcunningham.github.io/5209
+repo_url: https://github.com/barretcunningham/5209
+repo_name: barretcunningham/5209
+
+theme:
+  name: material
+  logo: docs/assets/img/logo.jpg
+  favicon: docs/assets/img/logo.jpg
+  palette:
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Boat:
+    - Overview: boat/overview.md
+    - Particulars: boat/particulars.md
+  - Safety:
+    - Overview: safety/overview.md
+    - Checklists:
+      - Overview: safety/checklists/index.md
+      - Man Overboard: safety/checklists/mob.md
+      - Fire: safety/checklists/fire.md
+      - Flooding: safety/checklists/flooding.md
+      - Abandon Ship: safety/checklists/abandon-ship.md
+  - Procedures:
+    - Overview: procedures/overview.md
+    - Departure: procedures/departure.md
+    - Arrival: procedures/arrival.md
+    - Anchoring: procedures/anchoring.md
+    - Reefing: procedures/reefing.md
+    - Heavy Weather: procedures/heavy-weather.md
+  - Systems:
+    - Overview: systems/overview.md
+    - Electrical 12V: systems/electrical-12v.md
+    - Electrical AC: systems/electrical-ac.md
+    - Propulsion: systems/propulsion.md
+    - Plumbing: systems/plumbing.md
+    - Navigation: systems/navigation.md
+    - Communications: systems/communications.md
+  - Equipment:
+    - Overview: equipment/README.md
+    - Power:
+      - Safiery Meteor 48V: equipment/power/safiery-meteor-48v/safiery-meteor-48v.md
+      - Scotty V3 24-48 DC/DC: equipment/power/scotty-v3-24-48-dcdc/scotty-v3-24-48-dcdc.md
+      - Victron 12/165 Gel 24V: equipment/power/victron-12-165-gel-24v/victron-12-165-gel-24v.md
+  - Maintenance:
+    - Overview: maintenance/overview.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/barretcunningham/5209

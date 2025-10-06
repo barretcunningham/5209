@@ -1,8 +1,3 @@
----
-title: "Arrival"
-parent: "Procedures"
-nav_order: 30
----
 
 # Arrival Procedure
 
