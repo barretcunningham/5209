@@ -80,11 +80,17 @@ nav:
     - Navigation: systems/navigation.md
     - Communications: systems/communications.md
   - Equipment:
-    - Overview: equipment/README.md
+    - Overview: equipment/index.md
     - Power:
-      - Safiery Meteor 48V: equipment/power/safiery-meteor-48v/safiery-meteor-48v.md
-      - Scotty V3 24-48 DC/DC: equipment/power/scotty-v3-24-48-dcdc/scotty-v3-24-48-dcdc.md
-      - Victron 12/165 Gel 24V: equipment/power/victron-12-165-gel-24v/victron-12-165-gel-24v.md
+      - Overview: equipment/power/index.md
+      - Safiery Meteor 48V: equipment/power/safiery-meteor-48v.md
+      - Scotty V3 24-48 DC/DC: equipment/power/scotty-v3-24-48-dcdc.md
+      - Victron 12/165 Gel 24V: equipment/power/victron-12-165-gel-24v.md
+    - Navigation: equipment/navigation/index.md
+    - Propulsion: equipment/propulsion/index.md
+    - Water: equipment/water/index.md
+    - Safety: equipment/safety/index.md
+    - Galley: equipment/galley/index.md
   - Maintenance:
     - Overview: maintenance/overview.md
 
