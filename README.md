@@ -163,6 +163,7 @@ Two common ways to publish:
 1) Quick start (no build):
 
 - Place all content under `docs/` and create `docs/index.md` as the homepage.
+- For Just the Docs (Jekyll): add `docs/_config.yml` with `remote_theme: just-the-docs/just-the-docs` (already scaffolded here).
 - In GitHub → Settings → Pages: Source = `Deploy from a branch`, Branch = `main`, Folder = `/docs`.
 
 2) Static site generator (nicer navigation/search):
@@ -171,6 +172,49 @@ Two common ways to publish:
 - This repo can be upgraded later without changing content locations inside `docs/`.
 
 If you want, we can scaffold MkDocs/Jekyll in a follow-up step.
+
+## Branch and Draft PR Workflow (no Make)
+
+Use plain git and the GitHub CLI (`gh`) to keep things simple.
+
+1) Create a feature branch
+
+```
+git checkout -b docs/jtd-setup
+```
+
+2) Commit your changes
+
+```
+git add -A
+git commit -m "Scaffold Jekyll + Just the Docs"
+```
+
+3) Push the branch
+
+```
+git push -u origin docs/jtd-setup
+```
+
+4) Open a draft PR (requires `gh`)
+
+```
+gh pr create --draft --fill --base main --head docs/jtd-setup
+```
+
+5) View the PR in a browser
+
+```
+gh pr view --web
+```
+
+Continue working by committing and pushing to the same branch:
+
+```
+git add -A && git commit -m "Update content" && git push
+```
+
+If you don’t use `gh`, create the PR from the GitHub web UI after pushing the branch.
 
 ## Conventions
 
@@ -209,4 +253,3 @@ Update `docs/boat/particulars.md` with authoritative details:
 ---
 
 If you’d like, I can next scaffold the `docs/` directory with starter pages, enable Git LFS, and set up a basic Pages site so you can begin adding content immediately.
-

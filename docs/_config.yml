@@ -1,0 +1,27 @@
+title: "NEEL 52 – Boat Operations Manual"
+description: "Living documentation for systems, procedures, safety, and maintenance."
+
+# Use the Just the Docs theme via remote_theme (works on GitHub Pages)
+remote_theme: just-the-docs/just-the-docs
+
+# Basic options
+search_enabled: true
+color_scheme: light
+logo: 
+
+# URL structure
+permalink: pretty
+
+# Navigation order via page front matter `nav_order`
+nav_sort: case_insensitive
+
+# Build settings (keep minimal for GitHub Pages)
+markdown: kramdown
+exclude:
+  - "scripts"
+  - "vendor"
+
+# Optional: add useful links in the header (fill in repo later if desired)
+# aux_links:
+#   "View on GitHub": "https://github.com/OWNER/REPO"
+
