@@ -26,83 +26,84 @@ Living documentation for vessel operations, systems, safety, and maintenance. Th
 
 ## Repository Layout
 
-Proposed structure to grow into as content arrives. We can prune or adjust as needed.
+Current structure using Material for MkDocs:
 
 ```
 .
 ├── README.md
-├── docs/
-│   ├── _config.yml
-│   ├── index.md
-│   ├── assets/
-│   │   └── .gitkeep
-│   ├── boat/
-│   │   ├── index.md
-│   │   ├── overview.md
-│   │   └── particulars.md
-│   ├── safety/
-│   │   ├── index.md
-│   │   ├── overview.md
-│   │   └── checklists/
-│   │       ├── index.md
-│   │       ├── abandon-ship.md
-│   │       ├── fire.md
-│   │       ├── flooding.md
-│   │       └── mob.md
-│   ├── procedures/
-│   │   ├── index.md
-│   │   ├── overview.md
-│   │   ├── anchoring.md
-│   │   ├── arrival.md
-│   │   ├── departure.md
-│   │   ├── heavy-weather.md
-│   │   └── reefing.md
-│   ├── systems/
-│   │   ├── index.md
-│   │   ├── overview.md
-│   │   ├── communications.md
-│   │   ├── electrical-12v.md
-│   │   ├── electrical-ac.md
-│   │   ├── navigation.md
-│   │   ├── plumbing.md
-│   │   └── propulsion.md
-│   ├── equipment/
-│   │   ├── index.md
-│   │   ├── galley/
-│   │   │   └── index.md
-│   │   ├── navigation/
-│   │   │   └── index.md
-│   │   ├── power/
-│   │   │   └── index.md
-│   │   ├── propulsion/
-│   │   │   └── index.md
-│   │   ├── safety/
-│   │   │   └── index.md
-│   │   └── water/
-│   │       └── index.md
-│   └── maintenance/
-│       ├── index.md
-│       ├── logs/
-│       │   └── index.md
-│       ├── overview.md
-│       ├── schedule.md
-│       └── spares.md
+├── mkdocs.yml              # MkDocs configuration and navigation
+├── requirements.txt        # Python dependencies
+├── .github/
+│   └── workflows/
+│       └── pages-deploy.yml  # GitHub Actions deployment
+└── docs/
+    ├── index.md
+    ├── assets/
+    │   └── img/
+    ├── boat/
+    │   ├── overview.md
+    │   └── particulars.md
+    ├── safety/
+    │   ├── overview.md
+    │   └── checklists/
+    │       ├── index.md
+    │       ├── abandon-ship.md
+    │       ├── fire.md
+    │       ├── flooding.md
+    │       └── mob.md
+    ├── procedures/
+    │   ├── overview.md
+    │   ├── anchoring.md
+    │   ├── arrival.md
+    │   ├── departure.md
+    │   ├── heavy-weather.md
+    │   └── reefing.md
+    ├── systems/
+    │   ├── overview.md
+    │   ├── communications.md
+    │   ├── electrical-12v.md
+    │   ├── electrical-ac.md
+    │   ├── navigation.md
+    │   ├── plumbing.md
+    │   └── propulsion.md
+    ├── equipment/
+    │   ├── index.md
+    │   ├── galley/
+    │   ├── navigation/
+    │   ├── power/
+    │   ├── propulsion/
+    │   ├── safety/
+    │   └── water/
+    └── maintenance/
+        ├── overview.md
+        ├── schedule.md
+        └── spares.md
 ```
 
 ## Getting Started
 
-1. Decide the publishing approach (see “GitHub Pages” below).
-2. Create the initial `docs/` skeleton and an `index.md` landing page.
-3. Begin importing key manuals and drafting the most-used checklists.
-4. Use pull requests to review important changes and keep history clear.
+**Preview the site locally:**
 
-Recommended for large files (PDFs, images):
+```bash
+# Install Python dependencies (first time only)
+pip install -r requirements.txt
 
+# Serve locally at http://127.0.0.1:8000
+mkdocs serve
+
+# Build static site
+mkdocs build
 ```
-git lfs install
-git lfs track "*.pdf" "*.zip" "*.ai" "*.psd"
-git add .gitattributes
-```
+
+**Working with content:**
+
+1. Add or edit Markdown files in `docs/`
+2. Update `mkdocs.yml` nav section to add pages to navigation
+3. Use pull requests to review important changes and keep history clear
+
+**For large files (PDFs, images):**
+
+Git LFS is already configured. All PDFs, images, and videos are automatically tracked via LFS (see `.gitattributes`).
 
 ## Adding Equipment Manuals
 
@@ -110,33 +111,30 @@ Goal: each equipment item has (a) the original manual PDF and (b) a short, skimm
 
 Directory and naming convention:
 
-- Place PDFs under `docs/equipment/<category>/<manufacturer>/manuals/`
+- Place PDFs under `docs/equipment/<category>/manuals/`
 - Name files: `yyyy-manufacturer-model-lang.pdf` (e.g., `2024-victron-cerbo-en.pdf`)
-- Add a Markdown summary at `docs/equipment/<category>/<manufacturer>/<model>.md`
+- Add a Markdown summary at `docs/equipment/<category>/<model>.md`
+- Add the page to `mkdocs.yml` nav section
 
-Front matter template for equipment pages:
+Markdown template for equipment pages (no front matter needed):
 
-```yaml
----
-title: "<Manufacturer> <Model>"
-manufacturer: "<Manufacturer>"
-model: "<Model>"
-category: "<Category>"   # e.g., Navigation, Power, Propulsion, Water, Safety
-location: "<Install location aboard>"
-installed: "<YYYY-MM>"
-serial_number: "<optional>"
-voltage: "<12V|24V|AC>"
-manual: "./manuals/<file-name>.pdf"
-links:
-  - label: "Manufacturer page"
-    href: "https://example.com/product"
-notes: |
-  Key settings, caveats, and boat-specific configuration.
----
+```markdown
+# <Manufacturer> <Model>
 
-# Overview
+**Category:** <Power/Navigation/Propulsion/Water/Safety/Galley>
+**Location:** <Install location aboard>
+**Installed:** <YYYY-MM>
+**Serial Number:** <optional>
+**Voltage:** <12V/24V/AC>
 
-Short description of what it does and how it’s used aboard.
+## Overview
+
+Short description of what it does and how it's used aboard.
+
+## Key Specifications
+
+- Spec A: value
+- Spec B: value
 
 ## Key Settings
 
@@ -149,9 +147,14 @@ Short description of what it does and how it’s used aboard.
 - Firmware update notes
 - Seasonal layup/wake-up
 
-## Manuals
+## Manuals & Links
 
-- [PDF manual](./manuals/<file-name>.pdf)
+- [PDF Manual](manuals/<file-name>.pdf)
+- [Manufacturer Page](https://example.com/product)
+
+## Notes
+
+Key settings, caveats, and boat-specific configuration.
 ```
 
 ## Procedures and Checklists
@@ -178,20 +181,24 @@ Suggested initial set:
 
 ## GitHub Pages
 
-Two common ways to publish:
+The site is deployed using **Material for MkDocs** via **GitHub Actions**:
 
-1) Quick start (no build):
+1. **Automatic deployment:** Every push to `main` triggers a build and deploy
+2. **Workflow:** `.github/workflows/pages-deploy.yml` handles the build
+3. **Published at:** https://barretcunningham.github.io/5209
 
-- Place all content under `docs/` and create `docs/index.md` as the homepage.
-- For Just the Docs (Jekyll): add `docs/_config.yml` with `remote_theme: just-the-docs/just-the-docs` (already scaffolded here).
-- In GitHub → Settings → Pages: Source = `Deploy from a branch`, Branch = `main`, Folder = `/docs`.
+**Key features:**
+- Modern, responsive Material Design theme
+- Dark/light mode toggle
+- Advanced search across all content
+- Tabbed navigation for main sections
+- Mobile-optimized viewing
 
-2) Static site generator (nicer navigation/search):
-
-- MkDocs (with `mkdocs-material`) or Jekyll are great options.
-- This repo can be upgraded later without changing content locations inside `docs/`.
-
-If you want, we can scaffold MkDocs/Jekyll in a follow-up step.
+**Settings:**
+- GitHub → Settings → Pages → Source: **GitHub Actions**
+- Build tool: MkDocs with Material theme
+- Python dependencies: `requirements.txt`
+- Configuration: `mkdocs.yml`
 
 ## Branch and Draft PR Workflow (no Make)
 
@@ -247,13 +254,15 @@ If you don’t use `gh`, create the PR from the GitHub web UI after pushing the 
 
 ## Roadmap / TODO
 
-- [x] Confirm site generator (Just the Docs scaffolded under `docs/`)
+- [x] Confirm site generator (Material for MkDocs)
 - [x] Create `docs/index.md` and initial section stubs (top-level navigation populated)
-- [ ] Set up GitHub Pages deployment
-- [ ] Enable Git LFS and track large binaries
+- [x] Set up GitHub Pages deployment via GitHub Actions
+- [x] Enable Git LFS and track large binaries
+- [x] Migrate from Jekyll to Material for MkDocs
 - [ ] Import priority manuals (navigation, power, propulsion, safety)
 - [ ] Draft detailed procedures and emergency checklists
 - [ ] Add maintenance schedule details and spares inventory
+- [ ] Add diagrams for electrical and plumbing systems
 
 ## Vessel Details (placeholders)
 

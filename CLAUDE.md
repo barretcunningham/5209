@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is a Jekyll-based documentation site for a NEEL 52 Trimaran (Hull #9) boat operations manual. It uses the Chirpy theme and is published via GitHub Pages at `https://barretcunningham.github.io/5209`.
+This is a MkDocs-based documentation site for a NEEL 52 Trimaran (Hull #9) boat operations manual. It uses Material for MkDocs and is published via GitHub Pages at `https://barretcunningham.github.io/5209`.
 
 The repository is **documentation-focused** (not a software project), containing:
 - Equipment manuals (PDFs) and Markdown summaries
@@ -15,10 +15,16 @@ The repository is **documentation-focused** (not a software project), containing
 
 ## Commands
 
-**Preview the site locally (if Jekyll is installed):**
+**Preview the site locally:**
 ```bash
-cd docs
-bundle exec jekyll serve
+# Install dependencies (first time only)
+pip install -r requirements.txt
+
+# Serve locally at http://127.0.0.1:8000
+mkdocs serve
+
+# Build static site
+mkdocs build
 ```
 
 **Git LFS commands:**
@@ -57,32 +63,28 @@ All documentation lives under `docs/` with this structure:
 - **`docs/procedures/`** - Operational procedures (departure, arrival, anchoring, reefing, heavy weather)
 - **`docs/systems/`** - System descriptions (electrical-12v, electrical-ac, propulsion, plumbing, navigation, communications)
 - **`docs/equipment/`** - Equipment organized by category:
-  - `equipment/<category>/<manufacturer>/<model>.md` - Markdown summary
-  - `equipment/<category>/<manufacturer>/manuals/*.pdf` - Original manuals
+  - `equipment/<category>/<model>.md` - Markdown summary (no front matter needed)
+  - `equipment/<category>/manuals/*.pdf` - Original manuals
   - Categories: power, navigation, propulsion, water, safety, galley
 - **`docs/maintenance/`** - Maintenance schedules, logs, spares inventory
-- **`docs/_tabs/`** - Chirpy theme sidebar navigation tabs
 - **`docs/assets/`** - Images, logos, diagrams
 
-### Jekyll Configuration
+### MkDocs Configuration
 
-- **Theme:** Chirpy (via `remote_theme: cotes2020/jekyll-theme-chirpy`)
-- **Config file:** `docs/_config.yml`
-- **Deployment:** GitHub Pages from `main` branch, `/docs` folder
-- **Markdown:** kramdown
-- **Permalinks:** pretty URLs
+- **Theme:** Material for MkDocs
+- **Config file:** `mkdocs.yml` (repository root)
+- **Deployment:** GitHub Actions → GitHub Pages
+- **Markdown:** Python-Markdown with extensions (admonitions, tables, code highlighting)
+- **Navigation:** Defined in `mkdocs.yml` nav section
 
-### Equipment Manual Convention
+### Equipment Pages
 
-Equipment pages follow this front matter structure:
-```yaml
----
-title: "<Manufacturer> <Model>"
-parent: "<Category>"        # Power, Navigation, Propulsion, etc.
-grand_parent: "Equipment"
-nav_order: <number>
----
-```
+Equipment pages are plain Markdown (no front matter required). Include:
+- Overview and purpose
+- Key specifications and settings
+- Installation location and details
+- Links to manuals
+- Common procedures
 
 Manual PDFs are named: `yyyy-manufacturer-model-lang.pdf`
 
@@ -106,3 +108,5 @@ The repository uses Git LFS for large binary files. All PDFs, images (PNG, JPG, 
 - Keep manufacturer manuals intact (don't modify PDFs); create Markdown summaries alongside them
 - Use pull requests for important changes to maintain history and enable review
 - The site is published publicly via GitHub Pages - assume all content is public
+- **Markdown format:** Plain Markdown only - no Jekyll front matter, no Liquid templates
+- **Navigation:** Add new pages to `mkdocs.yml` nav section to appear in site navigation
