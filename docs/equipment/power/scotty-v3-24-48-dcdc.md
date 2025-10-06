@@ -16,12 +16,9 @@ nav_order: 11
 - Record any CAN/serial settings and firmware versions.
 
 ## Manuals
-- Local manual (add file to repo): `docs/equipment/power/scotty-v3-24-48-dcdc/manuals/scotty-v3-24-48-manual.pdf`
+- Local manual: [Scotty V3 24/48 Manual (PDF)](docs/equipment/power/scotty-v3-24-48-dcdc/manuals/scotty-v3-24-48-manual.pdf)
 - If you prefer external hosting, add the URL here.
-
-> TODO: Place the PDF at the path above and update any links as needed.
 
 ## Maintenance
 - Inspect connectors, fusing, and ventilation path.
 - Verify mounting hardware torque and check for thermal events.
-
