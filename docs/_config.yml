@@ -1,17 +1,17 @@
 title: "NEEL 52 – Boat Operations Manual"
 description: "Living documentation for systems, procedures, safety, and maintenance."
 
-# Use the Chirpy theme via remote_theme (works on GitHub Pages)
-# Pin to v6.3.1 for Jekyll 3.x compatibility with GitHub Pages
-remote_theme: cotes2020/jekyll-theme-chirpy@v6.3.1
+# Use the Chirpy theme (Jekyll 4.x via GitHub Actions)
+theme: jekyll-theme-chirpy
 
-# Plugins (include remote-theme so Pages fetches Chirpy)
+# Plugins
 plugins:
-  - jekyll-remote-theme
   - jekyll-include-cache
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-redirect-from
 
 # Basic options
 # Theme options (Chirpy)
