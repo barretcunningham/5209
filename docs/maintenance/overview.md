@@ -1,9 +1,10 @@
 ---
-title: "Maintenance"
-nav_order: 60
+title: "Overview"
+parent: "Maintenance"
+nav_order: 10
 ---
 
-# Maintenance
+# Maintenance Overview
 
 Schedules, logs, and spares.
 
@@ -11,3 +12,4 @@ Schedules, logs, and spares.
 - Seasonal layup / recommissioning
 - Critical spares inventory
 
+Use the subsections for detailed schedules and tracking templates.

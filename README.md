@@ -30,43 +30,63 @@ Proposed structure to grow into as content arrives. We can prune or adjust as ne
 
 ```
 .
-├── README.md                      # You are here
-├── docs/                          # All published content (GitHub Pages source)
-│   ├── index.md                   # Site landing page (to be created)
-│   ├── boat/                      # Vessel identity, diagrams, weights, ratings
+├── README.md
+├── docs/
+│   ├── _config.yml
+│   ├── index.md
+│   ├── assets/
+│   │   └── .gitkeep
+│   ├── boat/
+│   │   ├── index.md
 │   │   ├── overview.md
-│   │   └── particulars.md         # Name, HIN, MMSI, call sign, rig/sail plan
-│   ├── safety/                    # Emergency procedures, drills, equipment
+│   │   └── particulars.md
+│   ├── safety/
+│   │   ├── index.md
 │   │   ├── overview.md
-│   │   ├── checklists/            # Quick-reference emergency checklists
-│   │   └── equipment/             # Flares, lifejackets, EPIRB, raft, etc.
-│   ├── procedures/                # Normal operations (dock, anchor, reef, etc.)
-│   │   ├── departure.md
-│   │   ├── arrival.md
+│   │   └── checklists/
+│   │       ├── index.md
+│   │       ├── abandon-ship.md
+│   │       ├── fire.md
+│   │       ├── flooding.md
+│   │       └── mob.md
+│   ├── procedures/
+│   │   ├── index.md
+│   │   ├── overview.md
 │   │   ├── anchoring.md
-│   │   ├── reefing.md
-│   │   └── heavy-weather.md
-│   ├── systems/                   # As-built details and how-tos by system
+│   │   ├── arrival.md
+│   │   ├── departure.md
+│   │   ├── heavy-weather.md
+│   │   └── reefing.md
+│   ├── systems/
+│   │   ├── index.md
+│   │   ├── overview.md
+│   │   ├── communications.md
 │   │   ├── electrical-12v.md
 │   │   ├── electrical-ac.md
-│   │   ├── propulsion.md
-│   │   ├── plumbing.md
 │   │   ├── navigation.md
-│   │   └── communications.md
-│   ├── equipment/                 # Manufacturer manuals and summaries
-│   │   ├── README.md              # Index of categories and items
-│   │   ├── navigation/            # e.g., autopilot, chartplotter, instruments
-│   │   ├── power/                 # e.g., chargers, inverters, alternators, solar
-│   │   ├── propulsion/            # e.g., engines, saildrives, controls
-│   │   ├── water/                 # e.g., watermaker, pumps, heaters
-│   │   ├── safety/                # e.g., EPIRB, AIS, raft
-│   │   └── galley/                # e.g., refrigeration, cooktop, oven
-│   ├── maintenance/               # Schedules, logs, spares
-│   │   ├── schedule.md
-│   │   ├── logs/
-│   │   └── spares.md
-│   └── assets/                    # Images, diagrams (prefer SVG/PNG)
-└── scripts/                       # Optional build/utility scripts (if needed)
+│   │   ├── plumbing.md
+│   │   └── propulsion.md
+│   ├── equipment/
+│   │   ├── index.md
+│   │   ├── galley/
+│   │   │   └── index.md
+│   │   ├── navigation/
+│   │   │   └── index.md
+│   │   ├── power/
+│   │   │   └── index.md
+│   │   ├── propulsion/
+│   │   │   └── index.md
+│   │   ├── safety/
+│   │   │   └── index.md
+│   │   └── water/
+│   │       └── index.md
+│   └── maintenance/
+│       ├── index.md
+│       ├── logs/
+│       │   └── index.md
+│       ├── overview.md
+│       ├── schedule.md
+│       └── spares.md
 ```
 
 ## Getting Started
@@ -227,13 +247,13 @@ If you don’t use `gh`, create the PR from the GitHub web UI after pushing the 
 
 ## Roadmap / TODO
 
-- [ ] Confirm site generator (simple docs/ vs MkDocs/Jekyll)
-- [ ] Create `docs/index.md` and initial section stubs
+- [x] Confirm site generator (Just the Docs scaffolded under `docs/`)
+- [x] Create `docs/index.md` and initial section stubs (top-level navigation populated)
 - [ ] Set up GitHub Pages deployment
 - [ ] Enable Git LFS and track large binaries
 - [ ] Import priority manuals (navigation, power, propulsion, safety)
-- [ ] Draft core procedures and emergency checklists
-- [ ] Add maintenance schedule and initial spares list
+- [ ] Draft detailed procedures and emergency checklists
+- [ ] Add maintenance schedule details and spares inventory
 
 ## Vessel Details (placeholders)
 

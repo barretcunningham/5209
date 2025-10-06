@@ -1,9 +1,10 @@
 ---
-title: "Systems"
-nav_order: 40
+title: "Overview"
+parent: "Systems"
+nav_order: 10
 ---
 
-# Systems
+# Systems Overview
 
 As-built details and how-tos by system.
 
@@ -13,3 +14,4 @@ As-built details and how-tos by system.
 - Navigation
 - Communications
 
+Link to individual system pages for wiring diagrams, set points, and maintenance notes.

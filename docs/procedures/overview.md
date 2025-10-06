@@ -1,9 +1,10 @@
 ---
-title: "Procedures"
-nav_order: 30
+title: "Overview"
+parent: "Procedures"
+nav_order: 10
 ---
 
-# Procedures
+# Procedures Overview
 
 Normal operations and best practices.
 
@@ -13,3 +14,4 @@ Normal operations and best practices.
 - Shore power / Generator change-over
 - Watermaker start/stop
 
+Use the subsections for detailed, step-by-step guidance.

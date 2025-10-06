@@ -1,9 +1,10 @@
 ---
-title: "Safety"
-nav_order: 20
+title: "Overview"
+parent: "Safety"
+nav_order: 10
 ---
 
-# Safety
+# Safety Overview
 
 Emergency procedures, drills, and equipment.
 
@@ -13,5 +14,4 @@ Emergency procedures, drills, and equipment.
 - Grounding
 - Abandon ship
 
-Checklists live under `safety/checklists/`.
-
+Checklists live under the [Checklists](./checklists/index.md) section.

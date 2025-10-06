@@ -1,5 +1,6 @@
 ---
-title: "Boat Overview"
+title: "Overview"
+parent: "Boat"
 nav_order: 10
 ---
 
@@ -10,5 +11,4 @@ nav_order: 10
 - HIN / MMSI / Call sign: TBD
 - Home port/registry: TBD
 
-See also: `boat/particulars.md` for authoritative details and identifiers.
-
+See also: [Particulars](./particulars.md) for identifiers and registry details.
