@@ -1,0 +1,20 @@
+# Ignore macOS metadata
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Node, Ruby, build caches (common on docs sites)
+node_modules/
+_site/
+.jekyll-cache/
+.sass-cache/
+vendor/
+
+# Logs
+*.log
+
