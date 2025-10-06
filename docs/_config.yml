@@ -1,19 +1,27 @@
 title: "NEEL 52 – Boat Operations Manual"
 description: "Living documentation for systems, procedures, safety, and maintenance."
 
-# Use the Just the Docs theme via remote_theme (works on GitHub Pages)
-remote_theme: just-the-docs/just-the-docs
+# Use the Chirpy theme via remote_theme (works on GitHub Pages)
+remote_theme: cotes2020/jekyll-theme-chirpy
+
+# Chirpy requires include-cache for performance on GitHub Pages
+plugins:
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
 
 # Basic options
-search_enabled: true
-color_scheme: light
-logo: 
+# Theme options (Chirpy)
+theme_mode: light    # options: light, dark, auto
+logo:                # path to logo if used (e.g., /assets/img/logo.png)
 
 # URL structure
 permalink: pretty
 
 # Navigation order via page front matter `nav_order`
-nav_sort: case_insensitive
+# Navigation note: Chirpy uses pages, posts, and optional tabs.
+# We will keep existing pages; sidebar/nav will follow Chirpy defaults.
 
 # Build settings (keep minimal for GitHub Pages)
 markdown: kramdown
@@ -24,4 +32,3 @@ exclude:
 # Optional: add useful links in the header (fill in repo later if desired)
 # aux_links:
 #   "View on GitHub": "https://github.com/OWNER/REPO"
-
