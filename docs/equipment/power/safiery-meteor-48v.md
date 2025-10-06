@@ -16,12 +16,9 @@ nav_order: 10
 - Document charger profiles (bulk/absorb/float) and voltage limits.
 
 ## Manuals
-- Local manual (add file to repo): `docs/equipment/power/safiery-meteor-48v/manuals/safiery-meteor-48v-manual.pdf`
+- Local manual: [Safiery Meteor 48V Manual (PDF)](docs/equipment/power/safiery-meteor-48v/manuals/safiery-meteor-48v-manual.pdf)
 - If you prefer external hosting, add the URL here.
-
-> TODO: Place the PDF at the path above and update any links as needed.
 
 ## Maintenance
 - Periodically verify BMS firmware and cell balance status.
 - Check torque on battery terminals and inspect cabling.
-
