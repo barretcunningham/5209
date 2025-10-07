@@ -59,44 +59,52 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Boat:
-    - Overview: boat/overview.md
-    - Particulars: boat/particulars.md
-  - Safety:
-    - Overview: safety/overview.md
+  - Introduction:
+    - Overview: introduction/index.md
+    - Boat Overview: introduction/overview.md
+    - Particulars: introduction/particulars.md
+  - Power:
+    - Overview: power/index.md
+    - 12V System: power/electrical-12v.md
+    - AC System: power/electrical-ac.md
+    - Equipment:
+      - Safiery Meteor 48V: power/equipment/safiery-meteor-48v.md
+      - Scotty V3 24-48 DC/DC: power/equipment/scotty-v3-24-48-dcdc.md
+      - Victron 12/165 Gel 24V: power/equipment/victron-12-165-gel-24v.md
+  - Water:
+    - Overview: water/index.md
+    - Water Systems: water/systems.md
+  - Waste:
+    - Overview: waste/index.md
+    - Waste Systems: waste/systems.md
+  - Sails and Rigging:
+    - Overview: sails-and-rigging/index.md
+    - Reefing: sails-and-rigging/reefing.md
+  - Navigation:
+    - Overview: navigation/index.md
+    - Navigation Systems: navigation/systems.md
+    - Communications: navigation/communications.md
+    - Heavy Weather: navigation/heavy-weather.md
+  - Engine:
+    - Overview: engine/index.md
+    - Propulsion Systems: engine/systems.md
+  - Appliances:
+    - Overview: appliances/index.md
+  - Anchoring and Mooring:
+    - Overview: anchoring-and-mooring/index.md
+    - Anchoring: anchoring-and-mooring/anchoring.md
+    - Arrival: anchoring-and-mooring/arrival.md
+    - Departure: anchoring-and-mooring/departure.md
+  - Emergency:
+    - Overview: emergency/index.md
+    - Emergency Procedures: emergency/overview.md
     - Checklists:
-      - Overview: safety/checklists/index.md
-      - Man Overboard: safety/checklists/mob.md
-      - Fire: safety/checklists/fire.md
-      - Flooding: safety/checklists/flooding.md
-      - Abandon Ship: safety/checklists/abandon-ship.md
-  - Procedures:
-    - Overview: procedures/overview.md
-    - Departure: procedures/departure.md
-    - Arrival: procedures/arrival.md
-    - Anchoring: procedures/anchoring.md
-    - Reefing: procedures/reefing.md
-    - Heavy Weather: procedures/heavy-weather.md
-  - Systems:
-    - Overview: systems/overview.md
-    - Electrical 12V: systems/electrical-12v.md
-    - Electrical AC: systems/electrical-ac.md
-    - Propulsion: systems/propulsion.md
-    - Plumbing: systems/plumbing.md
-    - Navigation: systems/navigation.md
-    - Communications: systems/communications.md
-  - Equipment:
-    - Overview: equipment/index.md
-    - Power:
-      - Overview: equipment/power/index.md
-      - Safiery Meteor 48V: equipment/power/safiery-meteor-48v.md
-      - Scotty V3 24-48 DC/DC: equipment/power/scotty-v3-24-48-dcdc.md
-      - Victron 12/165 Gel 24V: equipment/power/victron-12-165-gel-24v.md
-    - Navigation: equipment/navigation/index.md
-    - Propulsion: equipment/propulsion/index.md
-    - Water: equipment/water/index.md
-    - Safety: equipment/safety/index.md
-    - Galley: equipment/galley/index.md
+      - Overview: emergency/checklists/index.md
+      - Man Overboard: emergency/checklists/mob.md
+      - Fire: emergency/checklists/fire.md
+      - Flooding: emergency/checklists/flooding.md
+      - Abandon Ship: emergency/checklists/abandon-ship.md
+    - Equipment: emergency/equipment/index.md
   - Maintenance:
     - Overview: maintenance/overview.md
 
