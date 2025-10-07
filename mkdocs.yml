@@ -90,6 +90,7 @@ nav:
   - Propulsion:
     - Overview: propulsion/index.md
     - Propulsion Systems: propulsion/systems.md
+    - Main Engine: propulsion/main-engine/index.md
   - Appliances:
     - Overview: appliances/index.md
   - Anchoring and Mooring:
