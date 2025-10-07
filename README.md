@@ -12,94 +12,18 @@ Living documentation for vessel operations, systems, safety, and maintenance. Th
 - Clear procedures for normal ops, emergencies, and maintenance
 - Published to the web (GitHub Pages) for convenient read-only access
 
-## Contents
-
-- [Repository Layout](#repository-layout)
-- [Getting Started](#getting-started)
-- [Adding Equipment Manuals](#adding-equipment-manuals)
-- [Procedures and Checklists](#procedures-and-checklists)
-- [Safety and Disclaimers](#safety-and-disclaimers)
-- [GitHub Pages](#github-pages)
-- [Conventions](#conventions)
-- [Roadmap / TODO](#roadmap--todo)
-- [Vessel Details (placeholders)](#vessel-details-placeholders)
-
 ## Repository Layout
 
-Current structure using Material for MkDocs:
-
-```
-.
-├── README.md
-├── mkdocs.yml              # MkDocs configuration and navigation
-├── requirements.txt        # Python dependencies
-├── .github/
-│   └── workflows/
-│       └── pages-deploy.yml  # GitHub Actions deployment
-└── docs/
-    ├── index.md
-    ├── assets/
-    │   └── img/
-    ├── boat/
-    │   ├── overview.md
-    │   └── particulars.md
-    ├── safety/
-    │   ├── overview.md
-    │   └── checklists/
-    │       ├── index.md
-    │       ├── abandon-ship.md
-    │       ├── fire.md
-    │       ├── flooding.md
-    │       └── mob.md
-    ├── procedures/
-    │   ├── overview.md
-    │   ├── anchoring.md
-    │   ├── arrival.md
-    │   ├── departure.md
-    │   ├── heavy-weather.md
-    │   └── reefing.md
-    ├── systems/
-    │   ├── overview.md
-    │   ├── communications.md
-    │   ├── electrical-12v.md
-    │   ├── electrical-ac.md
-    │   ├── navigation.md
-    │   ├── plumbing.md
-    │   └── propulsion.md
-    ├── equipment/
-    │   ├── index.md
-    │   ├── galley/
-    │   ├── navigation/
-    │   ├── power/
-    │   ├── propulsion/
-    │   ├── safety/
-    │   └── water/
-    └── maintenance/
-        ├── overview.md
-        ├── schedule.md
-        └── spares.md
-```
+Documentation is organized under `docs/` into functional categories. See the [published site](https://barretcunningham.github.io/5209) or `mkdocs.yml` for the current navigation structure.
 
 ## Getting Started
-
-**Preview the site locally:**
-
-```bash
-# Install Python dependencies (first time only)
-pip install -r requirements.txt
-
-# Serve locally at http://127.0.0.1:8000
-mkdocs serve
-
-# Build static site
-mkdocs build
-```
 
 **Working with content:**
 
 1. Add or edit Markdown files in `docs/`
 2. Update `mkdocs.yml` nav section to add pages to navigation
-3. Use pull requests to review important changes and keep history clear
+3. Commit and push changes to trigger automatic build and deployment via GitHub Actions
+4. View the published site at https://barretcunningham.github.io/5209
 
 **For large files (PDFs, images):**
 
@@ -252,33 +176,4 @@ If you don’t use `gh`, create the PR from the GitHub web UI after pushing the 
 - Cross-reference equipment pages from relevant system and procedure pages.
 - Keep “as-built” configurations in systems pages; note any deviations from default manuals.
 
-## Roadmap / TODO
 
-- [x] Confirm site generator (Material for MkDocs)
-- [x] Create `docs/index.md` and initial section stubs (top-level navigation populated)
-- [x] Set up GitHub Pages deployment via GitHub Actions
-- [x] Enable Git LFS and track large binaries
-- [x] Migrate from Jekyll to Material for MkDocs
-- [ ] Import priority manuals (navigation, power, propulsion, safety)
-- [ ] Draft detailed procedures and emergency checklists
-- [ ] Add maintenance schedule details and spares inventory
-- [ ] Add diagrams for electrical and plumbing systems
-
-## Vessel Details (placeholders)
-
-Update `docs/boat/particulars.md` with authoritative details:
-
-- Vessel name: <TBD>
-- Type: NEEL 52 Trimaran (Hull #9)
-- HIN: <TBD>
-- MMSI: <TBD>
-- Call sign: <TBD>
-- Home port/registry: <TBD>
-- Electrical system: <12V/24V DC>, <120/230V AC> (confirm)
-- Propulsion: <engine(s)/saildrive model>
-- Sails/rig: <inventory and reef points>
-- Emergency contacts: <TBD>
-
----
-
-If you’d like, I can next scaffold the `docs/` directory with starter pages, enable Git LFS, and set up a basic Pages site so you can begin adding content immediately.

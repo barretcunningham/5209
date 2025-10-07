@@ -56,18 +56,14 @@ gh pr create --draft --fill --base main --head docs/feature-name
 
 ### Content Organization
 
-All documentation lives under `docs/` with this structure:
+All documentation lives under `docs/` organized into functional categories. See `mkdocs.yml` nav section for the current navigation structure.
 
-- **`docs/boat/`** - Vessel particulars, overview, specifications
-- **`docs/safety/`** - Safety overview and emergency checklists (MOB, fire, flooding, abandon ship)
-- **`docs/procedures/`** - Operational procedures (departure, arrival, anchoring, reefing, heavy weather)
-- **`docs/systems/`** - System descriptions (electrical-12v, electrical-ac, propulsion, plumbing, navigation, communications)
-- **`docs/equipment/`** - Equipment organized by category:
-  - `equipment/<category>/<model>.md` - Markdown summary (no front matter needed)
-  - `equipment/<category>/manuals/*.pdf` - Original manuals
-  - Categories: power, navigation, propulsion, water, safety, galley
-- **`docs/maintenance/`** - Maintenance schedules, logs, spares inventory
-- **`docs/assets/`** - Images, logos, diagrams
+Key organizational principles:
+- Equipment is organized under relevant functional categories (e.g., `power/equipment/`, `navigation/equipment/`)
+- Equipment pages are plain Markdown files: `<category>/equipment/<model>.md`
+- Manuals are stored alongside equipment: `<category>/equipment/<model>/manuals/*.pdf`
+- Maintenance procedures are integrated into each functional category where appropriate
+- Emergency procedures and safety equipment are consolidated under `emergency/`
 
 ### MkDocs Configuration
 

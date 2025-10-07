@@ -87,9 +87,9 @@ nav:
     - Navigation Systems: navigation/systems.md
     - Communications: navigation/communications.md
     - Heavy Weather: navigation/heavy-weather.md
-  - Engine:
-    - Overview: engine/index.md
-    - Propulsion Systems: engine/systems.md
+  - Propulsion:
+    - Overview: propulsion/index.md
+    - Propulsion Systems: propulsion/systems.md
   - Appliances:
     - Overview: appliances/index.md
   - Anchoring and Mooring:
