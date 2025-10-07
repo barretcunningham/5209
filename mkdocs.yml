@@ -1,4 +1,4 @@
-site_name: NEEL 52 – Boat Operations Manual
+site_name: 52-09 Operations Manual
 site_description: Living documentation for systems, procedures, safety, and maintenance
 site_url: https://barretcunningham.github.io/5209
 repo_url: https://github.com/barretcunningham/5209
@@ -6,8 +6,8 @@ repo_name: barretcunningham/5209
 
 theme:
   name: material
-  logo: assets/img/logo.jpg
-  favicon: assets/img/logo.jpg
+  logo: assets/img/neel-logo.svg
+  favicon: assets/img/neel-logo.svg
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -61,7 +61,6 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - Home: index.md
   - Introduction:
     - Overview: introduction/index.md
     - Boat Overview: introduction/overview.md

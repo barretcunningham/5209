@@ -1,20 +1,11 @@
-# NEEL 52 — Boat Operations Manual
+# Introduction
 
-Welcome. This site centralizes vessel operations, systems, safety, and maintenance. Use the left navigation and search to find procedures and equipment references.
+Welcome to the NEEL 52 Trimaran (Hull #9) Operations Manual.
 
-## Quick Start
+This living documentation covers all aspects of boat systems, procedures, safety, and maintenance.
 
-- Boat particulars: see Boat → Overview
-- Key procedures: departure/arrival, anchoring, reefing
-- Emergencies: MOB, fire, flooding, abandon ship
-- Systems: electrical, propulsion, plumbing, navigation, comms
+## Quick Links
 
-## Sections
-
-- [Boat](./boat/overview.md)
-- [Safety](./safety/overview.md)
-- [Procedures](./procedures/overview.md)
-- [Systems](./systems/overview.md)
-- [Equipment](./equipment/README.md)
-- [Maintenance](./maintenance/overview.md)
+- [Overview](introduction/overview.md) - Vessel description and capabilities
+- [Particulars](introduction/particulars.md) - Technical specifications and dimensions
 
