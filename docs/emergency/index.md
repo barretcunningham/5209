@@ -12,6 +12,8 @@ Emergency procedures, checklists, and equipment.
 - [Man Overboard](checklists/mob.md) - MOB response procedures
 - [Fire](checklists/fire.md) - Fire response and suppression
 - [Flooding](checklists/flooding.md) - Flooding response and damage control
+- [Grounding](checklists/grounding.md) - Grounding response and refloating
+- [Collision](checklists/collision.md) - Collision response and damage assessment
 - [Abandon Ship](checklists/abandon-ship.md) - Abandon ship procedures
 
 ## Emergency Communications

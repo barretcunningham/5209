@@ -65,6 +65,7 @@ nav:
     - Overview: introduction/index.md
     - Boat Overview: introduction/overview.md
     - Particulars: introduction/particulars.md
+    - Glossary: introduction/glossary.md
   - Power:
     - Overview: power/index.md
     - 12V System: power/electrical-12v.md
@@ -86,6 +87,8 @@ nav:
     - Overview: navigation/index.md
     - Navigation Systems: navigation/systems.md
     - Communications: navigation/communications.md
+    - Rules of the Road: navigation/rules-of-the-road.md
+    - Buoys and Marks: navigation/buoys-and-marks.md
     - Heavy Weather: navigation/heavy-weather.md
   - Propulsion:
     - Overview: propulsion/index.md
@@ -106,6 +109,8 @@ nav:
       - Man Overboard: emergency/checklists/mob.md
       - Fire: emergency/checklists/fire.md
       - Flooding: emergency/checklists/flooding.md
+      - Grounding: emergency/checklists/grounding.md
+      - Collision: emergency/checklists/collision.md
       - Abandon Ship: emergency/checklists/abandon-ship.md
     - Equipment: emergency/equipment/index.md
   - Maintenance:
