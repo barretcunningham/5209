@@ -15,18 +15,21 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: blue
-      accent: light blue
+      primary: red
+      accent: red
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue
-      accent: light blue
+      primary: red
+      accent: red
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
+  font:
+    text: Jost
+    code: Roboto Mono
   features:
     - navigation.tabs
     - navigation.sections
@@ -107,6 +110,9 @@ nav:
     - Equipment: emergency/equipment/index.md
   - Maintenance:
     - Overview: maintenance/overview.md
+
+extra_css:
+  - stylesheets/extra.css
 
 extra:
   social:

@@ -1,0 +1,129 @@
+/* NEEL-inspired custom styling */
+
+:root {
+  /* NEEL brand colors */
+  --md-primary-fg-color: #da0d1a;
+  --md-primary-fg-color--light: #e83a44;
+  --md-primary-fg-color--dark: #b00a15;
+  --md-accent-fg-color: #da0d1a;
+
+  /* Typography - NEEL uses ABeeZee and Jost */
+  --md-text-font: "Jost", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  --md-code-font: "Roboto Mono", "Courier New", monospace;
+}
+
+/* Import NEEL-style fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
+
+/* Clean, spacious layout matching NEEL aesthetic */
+.md-header {
+  background-color: white;
+  color: #333;
+  box-shadow: 0 0 0.2rem rgba(0,0,0,.1), 0 0.2rem 0.4rem rgba(0,0,0,.2);
+}
+
+.md-header__title {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+/* Primary navigation tabs */
+.md-tabs {
+  background-color: #da0d1a;
+}
+
+/* Headings - uppercase with letter spacing like NEEL */
+h1, h2 {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+/* Links with NEEL red */
+.md-content a {
+  color: #da0d1a;
+}
+
+.md-content a:hover {
+  color: #b00a15;
+}
+
+/* Tables - clean minimal style */
+.md-typeset table:not([class]) {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #f8f8f8;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+/* Admonitions - cleaner borders */
+.md-typeset .admonition,
+.md-typeset details {
+  border-left: 0.2rem solid;
+}
+
+/* Navigation - cleaner style */
+.md-nav__link--active {
+  color: #da0d1a;
+  font-weight: 500;
+}
+
+.md-nav__link:hover {
+  color: #da0d1a;
+}
+
+/* Search - NEEL red highlights */
+.md-search__input::placeholder {
+  opacity: 0.6;
+}
+
+/* Code blocks - minimal style */
+.md-typeset pre > code {
+  border-radius: 0.2rem;
+}
+
+/* Buttons and CTAs */
+.md-button {
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.md-button--primary {
+  background-color: #da0d1a;
+  border-color: #da0d1a;
+}
+
+.md-button--primary:hover {
+  background-color: #b00a15;
+  border-color: #b00a15;
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #da0d1a;
+  --md-accent-fg-color: #e83a44;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background-color: #1e1e1e;
+}
+
+[data-md-color-scheme="slate"] .md-content a {
+  color: #e83a44;
+}
+
+[data-md-color-scheme="slate"] .md-content a:hover {
+  color: #da0d1a;
+}
