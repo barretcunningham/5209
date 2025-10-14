@@ -86,9 +86,74 @@ Concise, field‑ready operating guidance for the installed Yanmar JH‑CR commo
 - High coolant temperature; low oil pressure; charging fault; water in fuel/restriction; ECU/engine management fault.
 - Follow the manual’s alarm table and troubleshooting flow; record any codes/messages from the VC20 display.
 
-## Maintenance Overview (operations‑adjacent)
+## Maintenance Schedule
 
-- Oil/filter, fuel filters/separator, raw‑water impeller, belts, coolant, anodes — service per the manual’s hours/conditions. Keep logs and parts references.
+Perform maintenance according to engine hours or calendar intervals, whichever comes first. Items marked with ⚠ should be performed by an authorized YANMAR dealer.
+
+### Daily (Pre-Operation Checks)
+
+- Visual inspection of engine exterior for leaks/damage
+- Check fuel level and refill if necessary
+- Check engine oil level
+- Check marine gear/saildrive oil level
+- Check coolant level
+- Check seawater outlet during operation
+- Check alarm and indicators
+
+### Every 50 Hours or Monthly
+
+- Drain fuel/water separator
+- Check battery electrolyte level
+- Adjust alternator V-ribbed belt tension (⚠ Initial 50 hours only)
+- ⚠ Adjust intake/exhaust valve clearance (Initial 50 hours only)
+- ⚠ Check remote control cable operation (Initial 50 hours only)
+- ⚠ Adjust propeller shaft alignment (Initial 50 hours only)
+
+### After Initial 50 Hours (Break-In Service)
+
+- Replace engine oil
+- Replace engine oil filter
+- Replace marine gear oil
+- Replace marine gear oil filter (if equipped)
+- Drain water and sediment from fuel tank
+
+### Every 250 Hours or 1 Year
+
+- Replace engine oil
+- Replace engine oil filter
+- Replace marine gear oil
+- Replace marine gear oil filter (if equipped)
+- Drain water and sediment from fuel tank
+- Adjust alternator V-ribbed belt tension
+- Check wiring connectors
+- Tighten all major nuts and bolts
+- ⚠ Check remote control cable operation
+
+### Every 500 Hours or 2 Years
+
+- Replace fuel filter element
+- Check or replace seawater pump impeller
+- Clean intake silencer (air cleaner) element
+- Clean or replace exhaust/water mixing elbow
+- Wash turbocharger blower (4JH80/4JH110 only)
+- Replace alternator V-ribbed belt
+- Replace rubberized hoses (fuel and water)
+
+### Every 1000 Hours or 4 Years
+
+- Clean and check seawater passages
+- Check diaphragm assembly (3JH40/4JH45/4JH57 only)
+- ⚠ Adjust intake/exhaust valve clearance
+- ⚠ Check remote control cable operation
+- ⚠ Adjust propeller shaft alignment
+
+### Annual or As Specified
+
+- **Replace coolant:** Every year for standard coolant; every 2 years when using Yanmar Long Life Coolant (LLC)
+- **Replace rubberized hoses (fuel and water):** Every 2 years
+
+!!! note "Maintenance Records"
+    Keep detailed logs of all maintenance performed, including dates, hours, parts used, and any observations. These procedures are considered normal maintenance and are performed at owner's expense.
 
 ## Fluids and Capacities — 4JH110
 
