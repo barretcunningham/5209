@@ -18,13 +18,31 @@ The repository is **documentation-focused** (not a software project), containing
 **Preview the site locally:**
 ```bash
 # Install dependencies (first time only)
-pip install -r requirements.txt
+uv venv
+uv pip install -r requirements.txt
 
 # Serve locally at http://127.0.0.1:8000
-mkdocs serve
+uv run mkdocs serve
 
 # Build static site
-mkdocs build
+uv run mkdocs build
+```
+
+**Build PDF version:**
+```bash
+# Build site with PDF export (requires system libraries via Homebrew)
+./build-pdf.sh
+
+# Or manually:
+DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib ENABLE_PDF_EXPORT=1 uv run mkdocs build
+
+# PDF output: site/pdf/operations-manual.pdf
+```
+
+**System dependencies for PDF export:**
+```bash
+# Install WeasyPrint dependencies (one-time setup)
+brew install cairo pango gdk-pixbuf glib gobject-introspection
 ```
 
 **Git LFS commands:**

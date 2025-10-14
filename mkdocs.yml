@@ -44,6 +44,13 @@ theme:
 plugins:
   - search
   - tags
+  - with-pdf:
+      author: Barret Cunningham
+      copyright: Barret Cunningham
+      cover_title: 52-09 Operations Manual
+      cover_subtitle: Living documentation for systems, procedures, safety, and maintenance
+      output_path: pdf/operations-manual.pdf
+      enabled_if_env: ENABLE_PDF_EXPORT
 
 markdown_extensions:
   - admonition
