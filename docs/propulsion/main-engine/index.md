@@ -50,8 +50,11 @@ Concise, field‑ready operating guidance for the installed Yanmar JH‑CR commo
 
 ## Normal Shutdown (VC20)
 
+!!! danger "Critical: Alternator Damage Risk (Undocumented)"
+    **You MUST turn the control panel Power switch OFF after stopping the engine.** Failure to do so will destroy the 24V alternator. This critical requirement is **NOT documented in the Yanmar operation manual** but has been confirmed through field failure. Always follow the complete shutdown sequence below.
+
 - Neutral: return to `N`; idle without load ~5 minutes (especially after high load/turbo heat‑soak).
-- Stop: press Engine `START/STOP` to stop; then press Power switch to turn panel OFF.
+- Stop: press Engine `START/STOP` to stop; **then press Power switch to turn panel OFF**.
 - ECU settle: wait ≥6 seconds before turning the engine/ECU battery switch OFF.
 - Secure: close fuel tank cock and raw‑water seacock when leaving the vessel or where flooding/freezing is a risk.
 - Saildrive folding/feathering props (if fitted): with engine OFF for sailing, shift to REVERSE to fold/feather per prop maker guidance.
