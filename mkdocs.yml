@@ -84,6 +84,7 @@ nav:
   - Water:
     - Overview: water/index.md
     - Water Systems: water/systems.md
+    - Watermaker: water/watermaker.md
   - Waste:
     - Overview: waste/index.md
     - Waste Systems: waste/systems.md

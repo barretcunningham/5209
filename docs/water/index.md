@@ -8,9 +8,9 @@ Fresh water storage, distribution, and production systems.
 
 ## Equipment
 
+- [Watermaker](watermaker.md) - Dessalator D160 reverse osmosis watermaker
 - Water pumps
 - Filtration systems
-- Watermaker
 - Hot water heater
 
 ## Maintenance
