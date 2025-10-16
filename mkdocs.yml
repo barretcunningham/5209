@@ -3,6 +3,7 @@ site_description: Living documentation for systems, procedures, safety, and main
 site_url: https://barretcunningham.github.io/5209
 repo_url: https://github.com/barretcunningham/5209
 repo_name: barretcunningham/5209
+edit_uri: edit/main/docs/
 
 theme:
   name: material
